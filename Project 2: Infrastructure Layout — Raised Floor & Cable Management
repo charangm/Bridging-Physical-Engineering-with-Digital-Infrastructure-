@@ -1,0 +1,43 @@
+## 🏗️ Project 2: Infrastructure Layout — Raised Floor & Cable Management
+**Objective:** Structural design for airflow efficiency and multi-tier cable segregation.
+
+### 1. Raised Floor & Airflow Architecture
+* **System:** Bolted stringer understructure with $600\text{mm} \times 600\text{mm}$ HPL antistatic tiles.
+* **Plenum Height:** **450mm Finished Floor Height (FFH)** to facilitate optimal static pressure for underfloor cooling.
+* **Containment:** **Hot Aisle Containment (HAC)** specified to prevent air bypass and improve PUE (Power Usage Effectiveness).
+
+### 2. Multi-Tier Cable Segregation Strategy
+To mitigate EMI and maximize "Day 2" maintenance efficiency, the following hierarchy was designed:
+
+| Tier | Layer | Media Type | Technical Logic |
+| :--- | :--- | :--- | :--- |
+| **Tier A** | Underfloor | Power (A+B Feeds) | Keeps heavy cabling out of signal path; optimizes plenum space. |
+| **Tier B** | Overhead | Data / Fiber Optic | Allows rapid patching changes without disrupting airflow. |
+
+---
+
+## 🛠️ Technical Standards Applied
+* **ASHRAE 90.1:** Energy Standard for Buildings & Data Centers.
+* **TIA-942:** Telecommunications Infrastructure Standard for Data Centers.
+* **IS Codes:** Indian Standards for Concrete and Structural Integrity (for slab loading).
+
+---
+
+## 📈 Capacity Planning (Sensitivity Analysis)
+| Scenario | Server Load | Total Cooling Needed |
+| :--- | :--- | :--- |
+| **Standard (70%)** | 21 kW | 23.05 kW |
+| **Peak (100%)** | 30 kW | 32.05 kW |
+| **Expansion (4 Racks)** | 42 kW | 44.00 kW |
+
+---
+
+## 📂 File Directory
+* `/Calculations`: Excel models for thermal load variables.
+* `/Drawings`: Revit/AutoCAD layout exports for Floor & Cable Trays.
+* `/Reports`: Formal PDF documentation for stakeholder review.
+
+---
+**Author:** Charan GM  
+**Profile:** Civil Engineer & Infrastructure Specialist | McKinsey Forward Alum  
+**Location:** Bangalore, India
