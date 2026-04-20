@@ -1,0 +1,57 @@
+# Data Center Sustainability: PUE Optimization & ESG Strategy
+**Operational Strategy for Energy Efficiency and Decarbonization**
+
+---
+
+## 🌍 Project Overview
+As data centers account for ~2% of global electricity consumption, efficiency is no longer optional. This project evaluates the **Power Usage Effectiveness (PUE)** of the 30kW IT suite designed in previous modules and implements strategies to reduce carbon footprint and operational expenditure (OPEX).
+
+---
+
+## 📉 1. PUE Calculation (Baseline vs. Optimized)
+**Formula:** $PUE = \frac{\text{Total Facility Power}}{\text{IT Equipment Power}}$
+
+| Component | Baseline (kW) | Optimized (kW) | Improvement Logic |
+| :--- | :--- | :--- | :--- |
+| **IT Load** | 30.0 | 30.0 | Constant |
+| **Cooling Load** | 23.0 | 14.0 | Implement Variable Speed Fans (VFD) |
+| **Lighting/Misc** | 2.0 | 1.0 | LED + Motion Sensors |
+| **UPS Losses** | 3.0 | 1.5 | High-efficiency ECO-mode UPS |
+| **Total Power** | **58.0 kW** | **46.5 kW** | -- |
+| **PUE Score** | **1.93** | **1.55** | **19.6% Efficiency Gain** |
+
+---
+
+## ❄️ 2. Cooling Optimization Strategies
+To reach a PUE of 1.55, the following "Value Engineering" steps were applied:
+* **Airflow Management:** Transitioning from open-air cooling to **Cold Aisle Containment (CAC)** to eliminate hot-spots.
+* **Set-point Adjustment:** Increasing the supply air temperature from 18°C to 22°C (within ASHRAE TC 9.9 "Recommended" range) to reduce chiller compressor work.
+* **Blanking Panels:** Installing 1U/2U blanking panels in unused rack spaces to prevent hot air recirculation.
+
+---
+
+## 🔋 3. The "Green" Transition (ESG)
+**Objective:** Aligning infrastructure with Net-Zero 2030 goals.
+
+* **Renewable Integration:** Feasibility study for On-site Solar (Rooftop) or Power Purchase Agreements (PPAs) to offset 40% of daytime load.
+* **Waste Heat Recovery:** Investigating the use of rack exhaust heat for building water pre-heating (Circular Economy).
+* **Water Usage Effectiveness (WUE):** Transitioning to "Dry Cooling" or closed-loop systems to minimize water consumption in water-stressed regions like Bangalore.
+
+---
+
+## 📊 4. Financial Impact (The "Consulting" Lens)
+* **Energy Savings:** An annual reduction of **100,000+ kWh**.
+* **OPEX Reduction:** At ₹8/kWh, this results in **₹8,00,000 annual savings** in utility costs.
+* **ROI:** The payback period for VFD and Containment upgrades is estimated at **14 months**.
+
+---
+
+## 🛠️ Standards & Frameworks
+* **ISO 50001:** Energy Management Systems.
+* **LEED:** Leadership in Energy and Environmental Design (Data Center v4).
+* **GRI Standards:** Global Reporting Initiative for Sustainability.
+
+---
+**Author:** Charan GM  
+**Profile:** Infrastructure Specialist | McKinsey Forward Alum  
+**Location:** Bangalore, India
