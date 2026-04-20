@@ -22,6 +22,10 @@ I bridge the gap between physical engineering constraints and the digital econom
 * **Solution:** Engineered an N+1 UPS & Battery autonomy path (45kVA) with A/B dual-feed distribution.
 * **Impact:** Designed for Tier III resiliency, bridging Electrical and Civil structural load planning.
 
+### [4. PUE Optimization & Sustainability Strategy](link-to-repo-4)
+* **Strategy:** Operational ESG audit focused on reducing Power Usage Effectiveness from 1.93 to 1.55.
+* **Impact:** Projected **₹8,00,000 annual OPEX savings** through containment and VFD implementation.
+
 
 ---
 
