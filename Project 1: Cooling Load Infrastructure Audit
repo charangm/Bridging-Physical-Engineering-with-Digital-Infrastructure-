@@ -1,0 +1,31 @@
+# Data Center Infrastructure: Thermal Audit & Spatial Design Case Study
+**Technical Documentation for High-Density IT Environments**
+
+---
+
+## 🚀 Project Overview
+This repository contains a comprehensive technical audit and infrastructure design for a 24m² IT suite within a commercial fit-out context.
+The project bridges the gap between **Civil Engineering** and **Critical IT Infrastructure**, focusing on ASHRAE-standard cooling and TIA-942 spatial layout requirements.
+
+---
+
+## 📊 Project 1: Cooling Load Infrastructure Audit
+**Objective:** To determine the precise sensible cooling requirement and specify HVAC redundancy.
+
+### 1. Thermal Load Breakdown (Manual J Methodology)
+Using the ASHRAE 90.1 simplified sensible heat method, the following loads were calculated:
+
+| Heat Source | Formula / Context | Load (kW) |
+| :--- | :--- | :--- |
+| **Q1: IT Servers** | (30kW Total Capacity) × 70% Utilization | **21.00 kW** |
+| **Q2: Occupancy** | 3 Personnel × 150W (Sensible) | **0.45 kW** |
+| **Q3: Lighting** | 10 LED fixtures × 20W | **0.20 kW** |
+| **Q4: Envelope** | Solar Gain (3m²) + Wall Conduction | **1.40 kW** |
+| **Total Load** | **Sum of Q1 - Q4** | **23.05 kW** |
+
+### 2. Tonnage & Specification
+* **Total Tonnage:** 23.05 kW ÷ 3.517 = **6.55 TR**
+* **Recommendation:** Specify **7-Ton CRAC units** with **N+1 Redundancy** to ensure Tier-standard uptime.
+
+---
+
