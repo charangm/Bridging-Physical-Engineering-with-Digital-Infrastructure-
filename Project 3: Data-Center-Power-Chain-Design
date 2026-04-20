@@ -1,0 +1,67 @@
+# Critical Power Chain Design: Utility to Rack PDU
+**Technical Specification & Load Calculation for Tier-Standard IT Infrastructure**
+
+---
+
+## ⚡ Project Overview
+This project documents the design of a resilient electrical power chain for a high-density IT environment. It covers the full distribution path from the utility transformer down to the server rack, emphasizing **N+1 redundancy**, **UPS sizing**, and **emergency battery backup** autonomy.
+
+---
+
+## 📈 1. Load Calculation & UPS Sizing
+To support the 30kW IT load identified in the Thermal Audit (Project 1), the UPS system must be sized to handle both the IT load and a safety margin for growth.
+
+| Parameter | Value | Formula/Logic |
+| :--- | :--- | :--- |
+| **Total IT Load** | 30 kW | From 2 Racks @ 15kW each |
+| **UPS Power Factor** | 0.9 | Standard for modern Online Double-Conversion UPS |
+| **Calculated kVA** | 33.3 kVA | IT Load / Power Factor |
+| **Safety Margin** | 25% | Capacity for "Day 2" expansion |
+| **Final UPS Rating** | **~42 kVA** | Standardized to a **45kVA or 50kVA Unit** |
+
+### Redundancy Strategy: N+1
+To ensure 99.99% uptime, an **N+1 configuration** is implemented:
+* **Requirement:** 1 Unit (50kVA)
+* **Design:** 2 Units (50kVA each) in Parallel-Redundant configuration.
+* **Outcome:** If Unit A fails or requires maintenance, Unit B carries the full 100% load without interruption.
+
+---
+
+## 🔋 2. Battery Backup (Autonomy) Calculations
+**Objective:** Provide 15 minutes of runtime at full load to allow for graceful shutdown or Generator synchronization.
+
+* **Target Runtime:** 15 Minutes
+* **Total Discharge Load:** 30 kW
+* **Battery Efficiency:** 92%
+* **Calculation:** Using the constant power discharge method to specify a Lead-Acid (VRLA) or Lithium-Ion battery string capable of delivering ~33kW of DC power for the specified duration.
+
+---
+
+## 🔌 3. Single Line Diagram (SLD) Logic
+The power distribution follows a high-resiliency path:
+
+1. **Utility Input:** 11kV step-down transformer to 415V/230V.
+2. **ATS (Automatic Transfer Switch):** Switches between Utility and Backup Diesel Generator.
+3. **Main Distribution Board (MDB):** Feeds the UPS systems.
+4. **Parallel-Redundant UPS:** Cleans power and provides battery backup.
+5. **PDU (Power Distribution Unit):** Distributes power to individual racks.
+6. **Dual-Corded Rack PDUs:** Every server is fed by two independent power paths (A-Feed and B-Feed).
+
+---
+
+## 🏗️ Structural & Civil Considerations
+* **Battery Weight Loading:** High-density battery racks require reinforced floor slabs (coordinated with Project 2).
+* **Thermal Dissipation:** UPS and Battery rooms require dedicated cooling ($Q_{ups} = \sim 4\%$ of total power capacity).
+* **Containment:** Battery rooms designed with acid-resistant flooring and hydrogen gas monitoring/ventilation.
+
+---
+
+## 🛠️ Standards & Compliance
+* **IEEE 446:** Recommended Practice for Emergency and Standby Power Systems.
+* **Uptime Institute:** Tier III Topology requirements.
+* **IEC 60364:** International standards for electrical installations in buildings.
+
+---
+**Author:** Charan GM  
+**Profile:** Infrastructure Specialist | Civil Engineer | McKinsey Forward Alum 
+**Location:** Bangalore, India
