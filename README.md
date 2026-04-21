@@ -1,5 +1,5 @@
 # Hi, I'm Charan GM 👋
-**Infrastructure Specialist | Civil Engineer | McKinsey Forward Program Alum**
+**Infrastructure Specialist | Civil Engineer | **
 
 I bridge the gap between physical engineering constraints and the digital economy. Based in Bangalore, I specialize in the structural, thermal, and electrical infrastructure of high-stakes environments, specifically **Data Centers** and **Enterprise Commercial Fit-outs**.
 
